@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+    background-color: black;
+}
+
+/* Styling the main headline and subheadline at the top */
+.hero {
+    text-align: center;
+    margin:2% auto;
+}
+
+.main-headline {
+    font-size: 180%;
+    font-weight: 600;
+}
+
+/* Styling the price cards */
+.cards-container {
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    padding: 10px 0px;
+}
+
+.cards {
+    display: inline-block;
+    background-color: rgb(24, 24, 24);
+    width: 23%;
+    height: 400px;
+    margin: 0.5%;
+    border-radius: 10px;
+    text-align: left;
+    padding:1% 2%;
+    max-width: 400px;
+}
+
+.cards:hover {
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    transition-duration: 0.5s;
+}
+
+/* Radial gradient effects in first and third price card */
+.card1 {
+    background-image: radial-gradient(circle at 10% 90%, rgba(238, 156, 4, 0.3) 1%, rgb(24, 24, 24) 40%);
+}
+
+.card3 {
+    background-image: radial-gradient(circle at 90% 90%, rgba(238, 156, 4, 0.3) 1%, rgb(24, 24, 24) 40%);
+}
+
+/* Card contents */
+/* Styling the package names */
+.package {
+    color: rgb(238, 156, 4);
+    font-weight: 600;
+}
+
+/* Styling the price */
+.price {
+    font-size: 180%;
+    font-weight: 500;
+}
+
+/* Styling the words 'includes' */
+.includes {
+    padding-top: 20px;
+}
+
+/* Styling the benefits list */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    padding: 8px 0px;
+}
+
+/* Styling the package description below price and the list */
+.desc, ul {
+    font-size: 70%;
+    letter-spacing: 0.01cm;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Styling the square check icons in the list */
+.fa {
+    font-size: 120%;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Styling for different viewport (display) sizes */
+@media only screen and (max-width:1260px) {
+    .cards {
+        width: 28%;
+    }
+}
+
+@media only screen and (max-width:1010px) {
+    .cards {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width:950px) {
+    .cards {
+        display: block;
+        width: 100%;
+        margin: 4% auto;
+        padding:1% 4%;
+    }
+}
